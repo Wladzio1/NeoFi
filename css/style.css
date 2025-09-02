@@ -11,6 +11,10 @@ body {
   margin: 0;
 }
 
+p {
+  margin: 0;
+}
+
 ul,
 ol,
 a {
@@ -255,7 +259,7 @@ main {
   gap: 32px;
 }
 
-.features-btn {
+.batch {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -281,7 +285,7 @@ main {
   gap: 16px;
 }
 
-.features-heading {
+.content-heading {
   font-weight: 400;
   font-size: 28px; 
   line-height: 1;
@@ -290,7 +294,7 @@ main {
   margin: 0;
 }
 
-.features-p {
+.content-p {
   font-weight: 400;
   font-size: 16px;
   text-align: center;
@@ -342,4 +346,62 @@ main {
   justify-content: center;
   flex-direction: column;
   gap: 16px;
+}
+
+.statistics-sect {
+  background-color: #0F0F0F;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.statistics-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  gap: 32px;
+}
+
+.statistics-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.statistics-numbers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.statistics-group {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 12px;  
+}
+
+.statistics-amount {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 1;
+  text-transform: capitalize;
+  text-align: center;
+  color: #9DFF3A;
+}
+
+.of-what {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4;
+  text-align: center;
+  color: #999999;
 }

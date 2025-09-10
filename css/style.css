@@ -130,6 +130,11 @@ footer {
   padding: 0;
 }
 
+.log-btn,
+.try-btn {
+  display: none;
+}
+
 /* MAIN SECTION */
 
 main {
@@ -170,7 +175,7 @@ main {
 }
 
 .main-p {
-  font-weight: 400;
+  font-weight: 300;
   font-size: 16px;
   text-align: center;
   margin: 0;
@@ -197,7 +202,6 @@ main {
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  gap: 6px;
   border-radius: 40px;
   padding: 14px 24px;
   background-color: transparent;
@@ -313,7 +317,7 @@ main {
 }
 
 .content-p {
-  font-weight: 400;
+  font-weight: 300;
   font-size: 16px;
   text-align: center;
   color: #999999;
@@ -330,7 +334,7 @@ main {
 }
 
 .features-card-p {
-  font-weight: 400;
+  font-weight: 300;
   font-size: 16px;
   text-align: center;
   color: #999999;
@@ -406,7 +410,7 @@ main {
 }
 
 .of-what {
-  font-weight: 400;
+  font-weight: 300;
   font-size: 20px;
   line-height: 1.4;
   text-align: center;
@@ -455,7 +459,7 @@ main {
 }
 
 .blockchain-card-p {
-  font-weight: 400;
+  font-weight: 300;
   font-size: 14px;
   color: #999999;
 }
@@ -604,7 +608,7 @@ main {
 }
 
 .link {
-  font-weight: 400;
+  font-weight: 300;
   font-size: 14px;
   color: #999999;
 }
@@ -653,6 +657,10 @@ main {
   color: #d8d8d8;
 }
 
+.right-side-input {
+  font-weight: 300;
+}
+
 .input-wrapper input {
   background: transparent;
   border: none;
@@ -696,8 +704,26 @@ main {
 }
 
 @media screen and (min-width: 1158px) {
+
+  /* MAIN RULES */
+
+  .container {
+    flex-direction: row;
+    padding: 0 120px;
+  }
+
+  section {
+    padding: 88px 0;
+  }
+
+  /* Header SECT */
+
   .header-btn {
     display: none;
+  }
+
+  .header-container {
+    padding: 0 20px;
   }
 
   .site-nav {
@@ -711,7 +737,7 @@ main {
   }
 
   .site-nav-elem {
-    font-weight: 400;
+    font-weight: 300;
     font-size: 16px;
     text-align: center;
     color: #999999;
@@ -737,18 +763,62 @@ main {
     justify-content: center;
   }
 
+  .header-nav {
+    max-width: 782px;
+  }
+
+  .desktop-header-btn {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+  }
+
   .log-btn {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
     padding: 8px 24px;
-    width: 97px;
     height: 40px;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 16px;
     color: #fff; 
     background-color: transparent;
-    border: none;
+    border: solid 1px #4D4D4D;
+    border-radius: 40px;
   }
+  
+  .try-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 8px 24px;
+    height: 40px;
+    font-weight: 300;
+    font-size: 16px;
+    color: #000000; 
+    background-color: #9DFF3A;
+    border: solid 1px #4D4D4D;
+    border-radius: 40px;
+  }
+
+  /* Main SECT */
+
+  .main-content {
+    justify-content: flex-start;
+    gap: 40px;
+  }
+
+  .content-div {
+    justify-content: flex-start;
+    text-align: start;
+    gap: 24px;
+  }
+
+  .img-1 {
+    width: 512px;
+    height: 512px;
+  }
+  
 }

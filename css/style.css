@@ -175,7 +175,7 @@ main {
 }
 
 .main-p {
-  font-weight: 300;
+  font-weight: 200;
   font-size: 16px;
   text-align: center;
   margin: 0;
@@ -238,7 +238,7 @@ main {
   gap: 32px;  
 }
 
-/* PARTNERS SECTION */
+/*   SECTION */
 
 .partners-container {
   gap: 32px;
@@ -276,14 +276,12 @@ main {
   display: flex;
   flex: row;
   justify-content: space-between;
-  width: 100%;
 }
 
 .partners-div-2 {
   display: flex;
   flex: row;
   justify-content: space-around;
-  width: 100%;
 }
 
 .partners-heading {
@@ -708,7 +706,6 @@ main {
   /* MAIN RULES */
 
   .container {
-    flex-direction: row;
     padding: 0 120px;
   }
 
@@ -805,13 +802,19 @@ main {
 
   /* Main SECT */
 
+  .main-container {
+    flex-direction: row;
+  }
+
   .main-content {
+    align-items: flex-start;
     justify-content: flex-start;
     gap: 40px;
   }
 
   .content-div {
     justify-content: flex-start;
+    align-items: flex-start;
     text-align: start;
     gap: 24px;
   }
@@ -821,4 +824,46 @@ main {
     height: 512px;
   }
   
+  .main-h1 {
+    text-align: start;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 1.1;
+    text-transform: capitalize;
+  }
+
+  .main-p {
+    text-align: start;
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  .main-btn-group {
+    flex-direction: row;
+  }
+
+  /* Partners SECT */
+
+  .partners { 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 72px;
+    width: 100%;
+  }
+
+  .partners-div-2 {
+    justify-content: center;
+    gap: 72px;
+  }
+
+  .partners-div-1 {
+    gap: 72px;
+  }
+
+  .partners-logo-icon {
+    width: 32px;
+    height: 32px;
+  }
 }

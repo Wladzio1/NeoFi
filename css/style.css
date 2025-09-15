@@ -230,6 +230,13 @@ main {
   gap: 32px;
 }
 
+.main-content-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .main-container {
   display: flex;
   align-items: center;
@@ -238,7 +245,7 @@ main {
   gap: 32px;  
 }
 
-/*   SECTION */
+/* PARTNERS  SECTION */
 
 .partners-container {
   gap: 32px;
@@ -274,14 +281,16 @@ main {
 
 .partners-div-1 {
   display: flex;
-  flex: row;
+  flex-direction: row;
   justify-content: space-between;
+  gap: 20px;
 }
 
 .partners-div-2 {
   display: flex;
   flex: row;
   justify-content: space-around;
+  gap: 20px;
 }
 
 .partners-heading {
@@ -345,9 +354,12 @@ main {
   justify-content: center;
   flex-direction: column;
   gap: 16px;  
+  width: 314px;
+  height: 84px;
 }
 
 .features-card {
+  min-width: 362px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -366,6 +378,8 @@ main {
   justify-content: center;
   flex-direction: column;
   gap: 16px;
+  width: 100%;
+  max-width: 1200px;
 }
 
 /* STATISTICS SECTION */
@@ -433,7 +447,7 @@ main {
   gap: 24px;
   border-radius: 20px;
   padding: 24px 20px;
-  max-width: 362px;
+  min-width: 362px;
   min-height: 169px;
   background-color: #0F0F0F;
   border: solid 1px #4D4D4D;
@@ -713,7 +727,7 @@ main {
     padding: 88px 0;
   }
 
-  /* Header SECT */
+  /* HEADER SECTION */
 
   .header-btn {
     display: none;
@@ -800,7 +814,7 @@ main {
     border-radius: 40px;
   }
 
-  /* Main SECT */
+  /* MAIN SECTION */
 
   .main-container {
     flex-direction: row;
@@ -812,7 +826,9 @@ main {
     gap: 40px;
   }
 
-  .content-div {
+  .main-content-div {
+    display: flex;
+    flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     text-align: start;
@@ -842,7 +858,7 @@ main {
     flex-direction: row;
   }
 
-  /* Partners SECT */
+  /* PARTNERS SECTION */
 
   .partners { 
     display: flex;
@@ -865,5 +881,105 @@ main {
   .partners-logo-icon {
     width: 32px;
     height: 32px;
+  }
+
+  /* FEATURES SECTION */
+
+  .content-div {
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .content-heading {
+    font-size: 48px;
+    font-weight: 400;
+  }
+  
+  .content-p {
+    font-size: 18px;
+    line-height: 1.4;
+    text-align: center;
+  }
+
+  .features-text {
+    max-width: 644px;
+  }
+
+  .features-cards {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    max-width: 100%;
+    max-height: 264px;
+  }
+
+  .features-card {
+    border-radius: 12px;
+    padding: 48px 36px;
+    width: 100%;
+    height: 264px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 36px;
+  }
+
+  /* STATISTICS SECTION */
+
+  .statistics-numbers {
+    flex-direction: row;
+    gap: 72px;
+  }
+
+  .statistics-container > .content-div {
+    width: 704px;
+    height: 204px;
+  }
+
+  /* BLOCKCHAIN SECTION */
+
+  .blockchain-container > .content-div {
+    width: 890px;
+    height: 204px;
+  }
+
+  .img-2 {
+    width: 506px;
+    height: 506px;
+  }
+
+  .blockchain-content {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 72px;
+    width: 100%;
+  }
+
+  .blockchain-features-div {
+    gap: 40px;
+    width: 100%;
+  }
+
+  .blockchain-card {
+    border-radius: 20px;
+    padding: 30px 20px;
+    width: 100%;
+    height: 156px;
+  }
+
+  .blockchain-card-p {
+    font-size: 16px;
+    width: 100%;
+  }
+
+  /* OPINION SECTION */
+
+  .opinion-div > .content-div {
+    width: 644px;
   }
 }

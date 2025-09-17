@@ -360,6 +360,8 @@ main {
 
 .features-card {
   min-width: 362px;
+  width: 100%;
+  max-width: 792px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -448,6 +450,7 @@ main {
   border-radius: 20px;
   padding: 24px 20px;
   min-width: 362px;
+  max-width: 792px;
   min-height: 169px;
   background-color: #0F0F0F;
   border: solid 1px #4D4D4D;
@@ -499,6 +502,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 32px;
+  max-width: 100%;
 }
 
 .reviewer-photo {
@@ -507,37 +511,33 @@ main {
   border-radius: 100%;
 }
 
-.slider {
-  width: 100%;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
+.opinion-list-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.opinion-list-bttm, 
+.opinion-list-top {
+  gap: 20px;
 }
 
 .opinion-list-bttm {
   display: none;
 }
 
-.opinion-list-top {
-  display: flex;
-}
-
-.opinion-list-bttm, 
-.opinion-list-top {
-  gap: 20px;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-}
-
 .opinion-card {
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
   gap: 24px; 
   border-radius: 16px;
   padding: 32px;
-  width: 343px;
-  height: 196px;
+  width: 100%;
+  max-width: 792px;
+  min-height: 196px;
   border: solid 1px #4D4D4D;
   background-color: #000000;
   scroll-snap-align: start;
@@ -599,6 +599,8 @@ main {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  width: 100%;
+  max-width: 792px;
 }
 
 .FAQ-card {
@@ -610,6 +612,7 @@ main {
   border: 1px solid #4D4D4D;
   padding: 16px 20px;
   width: 100%;
+  max-width: 792px;
   height: 72px;
 }
 
@@ -974,11 +977,15 @@ main {
     height: 506px;
   }
 
+  .blockchain-container {
+    gap: 80px;
+  }
+
   .blockchain-content {
     display: flex;
     align-items: center;
     flex-direction: row;
-    gap: 72px;
+    gap: 40px;
     width: 100%;
   }
 
@@ -1008,5 +1015,58 @@ main {
   .opinion-div {
     align-items: center;
     justify-content: center;
+    gap: 72px;
+  }
+
+  /* TESTEMONIAL SECTION */
+
+  .FAQ-container {
+    gap: 72px;
+  }
+
+  .FAQ-container > .content-div {
+    width: 890px;
+  }
+  
+  /* REVOLUTIONARY SECTION */
+
+  .revolutionary-container > .content-div {
+    width: 878px;
+  }
+
+  /* FOOTER */
+
+  .footer-container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 92px;
+  }
+
+  .left-side {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0;
+    gap: 92px;
+  }
+
+  .links-div {
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .links-list {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .right-side {
+    margin: 0;
+  }
+
+  .footer-rights {
+    padding: 40px 0;
   }
 }

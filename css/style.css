@@ -507,6 +507,27 @@ main {
   border-radius: 100%;
 }
 
+.slider {
+  width: 100%;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.opinion-list-bttm {
+  display: none;
+}
+
+.opinion-list-top {
+  display: flex;
+}
+
+.opinion-list-bttm, 
+.opinion-list-top {
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
 .opinion-card {
   display: flex;
   align-items: flex-start;
@@ -515,10 +536,11 @@ main {
   gap: 24px; 
   border-radius: 16px;
   padding: 32px;
-  max-width: 100%;
+  width: 343px;
   height: 196px;
   border: solid 1px #4D4D4D;
   background-color: #000000;
+  scroll-snap-align: start;
 }
 
 .opinion {
@@ -981,5 +1003,10 @@ main {
 
   .opinion-div > .content-div {
     width: 644px;
+  }
+
+  .opinion-div {
+    align-items: center;
+    justify-content: center;
   }
 }
